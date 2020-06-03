@@ -1,0 +1,90 @@
+body {
+  background-color: #F5F8FF
+}
+
+.header {
+  height: 150px;
+  text-align: center;
+}
+
+.header img {
+  height: 120px;
+}
+
+.nav-link.active {
+  border-radius: 0 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  background-color: inherit !important;
+  border-bottom: 3px solid #007bff !important;
+}
+
+.nav-link {
+  padding: 5px 25px !important;
+  color: #495057 !important;
+  text-transform: uppercase;
+}
+
+.main-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f8fbfb;
+  min-height: 100vh;
+  box-shadow: 0 0 20px 0 #e0e5f3;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  display: flex;
+  padding-top: 10px;
+}
+
+.inner-section {
+  padding: 0 20px;
+  margin: 15px 0 0;
+  border-right: 1px solid #e8e8e8;
+}
+
+.result {
+  padding: 20px 20px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls button {
+  padding: 4px 35px;
+  margin-bottom: 15px;
+  min-width: 30%;
+}
+
+.resp-display {
+  background-color: #565656;
+  color: #fff;
+  height: 200px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.graph {
+  background-color: #F5F8FF;
+  min-height: 300px;
+  margin-top: 30px;
+}
+
+.log-details {
+  margin: 30px 20px 0px 20px;
+  background-color: #565656;
+  min-height: 500px;
+  color: #fff;
+}
