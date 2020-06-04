@@ -7,10 +7,11 @@ API end point:
 ```
 https://ciena-osa.herokuapp.com/api/
 ```
+Tech Stack: python3, flask, HTML, jQuery, Docker, Heroku, Bootstrap 4
 
 ## Getting Started
 
-Refer the following sections on how to install, run, and deploy the Moviesight application.
+Refer the following sections on how to install, run, and deploy the application.
 
 
 ### Prerequisites
@@ -76,7 +77,7 @@ docker build -t ciena-osa .
 After building the docker image, run the image using:
 
 ```
-docker run -p5000:5000 ciena-osa
+docker run -p 5000:5000 ciena-osa
 ```
 
 #### Step 4: The Application
@@ -103,3 +104,7 @@ The below image shows a sample screenshot of the graph and fields to query the c
 
 * Clicking on Start button invokes the START command and only when Stop button is clicked, STOP command is sent and TRACE is plotted.
 * Clicking Single button invokes SINGLE command, waits for 1 second and initiates a TRACE command to plot the graph.
+
+## References
+
+* https://plotly.com/
