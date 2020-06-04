@@ -15,7 +15,7 @@ Refer the following sections on how to install, run, and deploy the Moviesight a
 
 ### Prerequisites
 
-To have a local copy of this lab tutorial up and running on your local machine, you will first need to install python3 in your machine.
+To have a local copy up and running on your machine, you will first need to install python3 in your machine.
 
 ### Installing
 
