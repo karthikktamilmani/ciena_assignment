@@ -8,6 +8,7 @@ from time import sleep
 import datetime
 import pandas as pd
 import plotly.express as px
+import os
 
 
 app = Flask(__name__)
@@ -140,8 +141,9 @@ def get_trace_data():
 def construct_graph(data):
     # fig = go.Figure(data=go.Scatter(x=data["X"], y=data["Y"]))
     fig = px.line(data, x="X", y="Y", color="trials")
-    fig.update_layout(title="OSA", xaxis_title="Wavelength in nm",yaxis_title="Signal in dBm")
+    fig.update_layout(xaxis_title="Wavelength in nm",yaxis_title="Signal in dBm")
     return plotly.offline.plot(fig, output_type='div', include_plotlyjs=True)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(port=port,host="0.0.0.0")
