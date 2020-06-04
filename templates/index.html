@@ -112,7 +112,10 @@
                     $("#loadingDiv").hide();
                 }
             }
-        );
+        ).fail(function () {
+            $("#loadingDiv").hide();
+            alert("Please try again!");
+        })
     }
 
     function fetchLogs() {

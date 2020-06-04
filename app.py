@@ -75,8 +75,21 @@ def try_until_proper_resp(url,type):
         add_logs("ERROR")
         try_until_proper_resp(url,type)
 
-@app.route("/api/cmd", defaults={'query': None})
-@app.route("/api/cmd/", defaults={'query': None})
+@app.route("/api/cmd")
+def run_cmd_api():
+    url = host_URL
+    add_logs(url)
+    req_response = requests.get(url)
+    req_response = str(req_response.content,"utf-8")
+    if "READY" not in req_response:
+        if "ERROR" not in req_response:
+            req_response="ERROR: Unavailable"
+        add_logs(req_response)
+        return json.dumps(req_response), 503
+    add_logs(req_response)
+    return req_response
+
+
 @app.route("/api/cmd/<path:query>")
 def run_query(query):
     url = host_URL + (query if query else "")
