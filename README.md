@@ -43,3 +43,5 @@ python3 app.py
 #### Step 4: The Application
 
 In the last step, open your web browser, and navigate to `localhost:5000` to view a running instance of the application. If everything went fine, you should see the following page:
+
+![Image of App Running](/deployed_app.png)
