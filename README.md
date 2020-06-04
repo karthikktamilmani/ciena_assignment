@@ -1,7 +1,12 @@
-# ciena_assignment
+# OSA
 
 Deployed Application: You can find the application up and running on https://ciena-osa.herokuapp.com/.
 
+API end point:
+
+```
+https://ciena-osa.herokuapp.com/api/
+```
 
 ## Getting Started
 
